@@ -32,8 +32,8 @@ header {
 }
 
 .logo-container h1 {
-  font-size: 1.8rem;
-  letter-spacing: 1px;
+  font-size: clamp(1.1rem, 4vw, 1.8rem);
+  white-space: nowrap;
 }
 
 .logo-container span {
