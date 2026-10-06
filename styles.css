@@ -227,14 +227,15 @@ footer {
   border-top: 4px solid var(--devon-green);
 }
 
-/* Footer Link Color Fix */
+/* Footer Link Styling */
 footer a {
-  color: var(--off-white);
+  color: #33cc66;
   text-decoration: underline;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
 footer a:hover,
 footer a:focus {
-  color: var(--devon-green);
+  color: var(--text-light);
 }
