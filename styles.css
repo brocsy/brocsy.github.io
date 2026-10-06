@@ -32,7 +32,8 @@ header {
 }
 
 .logo-container h1 {
-  font-size: clamp(1.1rem, 4vw, 1.8rem);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
   white-space: nowrap;
 }
 
@@ -57,6 +58,25 @@ nav a {
 
 nav a:hover, nav a.active {
   background-color: var(--devon-green);
+}
+
+/* Mobile Layout Adjustments */
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .logo-container h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 0.8rem;
+    justify-content: center;
+  }
 }
 
 .hero {
@@ -124,85 +144,3 @@ nav a:hover, nav a.active {
 
 .photo-card p {
   padding: 0.8rem;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-/* Events List */
-.event-card {
-  background: #fff;
-  border-left: 5px solid var(--devon-green);
-  padding: 1.2rem;
-  margin-bottom: 1.2rem;
-  border-radius: 0 8px 8px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.event-date {
-  font-weight: bold;
-  color: var(--devon-green);
-  margin-bottom: 0.3rem;
-}
-
-/* Event Photo Gallery (Option 2) */
-.event-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-  margin: 12px 0;
-}
-
-.event-gallery img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-/* Form Styling */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group label {
-  margin-bottom: 0.3rem;
-  font-weight: 600;
-}
-
-.form-group input, .form-group textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button.btn {
-  background-color: var(--devon-green);
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  align-self: flex-start;
-}
-
-button.btn:hover {
-  background-color: var(--dark-green);
-}
-
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: var(--charcoal);
-  color: var(--text-light);
-  margin-top: 3rem;
-  border-top: 4px solid var(--devon-green);
-}
