@@ -275,6 +275,6 @@ footer a:focus {
 .event-gallery img {
   object-fit: cover;
   object-position: center;
-  height: 250px; /* Adjust this height to whatever looks best for your layout */
+  height: 300px; /* Adjust this height to whatever looks best for your layout */
   width: 100%;
 }
